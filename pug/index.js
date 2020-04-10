@@ -70,7 +70,7 @@ $('.formTambah').on('submit', x => {
 			'tanggal': tanggalSekarang,
 			'judul': $('.tambahJudul').val(),
 			'isi': $('.tambahIsi').val(),
-			'user_id': localStorage.id
+			'user_id': Number(localStorage.id)
 		}).get()
 		loadingStart()
 		$.ajax({
@@ -146,7 +146,7 @@ $('.formEdit').on('submit', function(x){
 			"tanggal": localStorage.tanggalPostingan,
 			"judul": $(this).find('.editJudul').val(),
 			"isi": $(this).find('.editIsi').val(),
-			"user_id": localStorage.id
+			"user_id": Number(localStorage.id)
 		}).get()
 		loadingStart()
 		$.ajax({
