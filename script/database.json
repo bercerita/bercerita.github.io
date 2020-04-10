@@ -3,7 +3,16 @@
 		{
 			"id": 1,
 			"username": "zen",
-			"password": "a3VjaW5n"
+			"password": "kucing"
+		}
+	],
+	"postingan": [
+		{
+			"id": 1,
+			"tanggal": "10/4/2020",
+			"judul": "Hello world",
+			"isi": "Lorem ipsum dolor sit amet",
+			"user_id": 1
 		}
 	]
 }
