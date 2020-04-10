@@ -4,6 +4,12 @@ var bulan = sekarang.getMonth() + 1
 var tahun = sekarang.getFullYear()
 var tanggalSekarang = `${tanggal}/${bulan}/${tahun}`
 
+$.expr[':'].contains = $.expr.createPseudo(function(arg){
+	return function(elem){
+		return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0
+	}
+})
+
 var olahData = () => {
 	$('.usernamenya').text(localStorage.username)
 	$('.form-control').val('')
@@ -124,5 +130,49 @@ $('.tampilHapus').click(() => {
 })
 
 $('.tampilEdit').click(() => {
-	$('.modal').modal(hide)
+	$('.modal').modal('hide')
+	$('.editJudul').val(localStorage.judulPostingan)
+	$('.editIsi').val(localStorage.isiPostingan)
+	$('.modalEdit').modal()
+})
+
+$('.formEdit').on('submit', function(x){
+	x.preventDefault()
+	loadingStart()
+	$.get(database, data => {
+		loadingDone()
+		var datanya = new OlahJson(data)
+		var ambil = datanya.query(`postingan/${localStorage.idPostingan}`).put({
+			"tanggal": localStorage.tanggalPostingan,
+			"judul": $(this).find('.editJudul').val(),
+			"isi": $(this).find('.editIsi').val(),
+			"user_id": localStorage.id
+		}).get()
+		loadingStart()
+		$.ajax({
+			url: database,
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			type: 'put',
+			data: JSON.stringify(ambil),
+			success: () => {
+				loadingDone()
+				olahData()
+			}
+		})
+	})
+})
+
+$('.cari').on('keyup', function(){
+	if ($('.cari').val() != ''){
+		$('.isiPostingan').addClass('sembunyi')
+		$('.isiPostingan').each(function(){
+			if ($(this).is(":contains(" + $('.cari').val() + ")")) {
+				$(this).removeClass('sembunyi')
+			}
+		})
+	} else {
+		$('.isiPostingan').removeClass('sembunyi')
+	}
 })

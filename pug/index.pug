@@ -61,6 +61,15 @@ block isi
 					.close(data-dismiss='modal') &times;
 					h4.modal-title Edit tulisan
 				.modal-body
+					form.formEdit
+						.form-group
+							label Judul
+							input.form-control.editJudul
+						.form-group
+							label Isi
+							textarea.form-control.editIsi(rows=10)
+						.form-group
+							input.btn.btn-success(type='submit' value='Update')
 
 block diLuarContainer
 	.navbar.navbar-default.navbar-fixed-bottom
@@ -68,6 +77,8 @@ block diLuarContainer
 			table.table.table-bordered
 				tbody 
 					tr 
+						td
+							input.form-control.cari(placeholder='Cari apa?')
 						td: .btn.btn-primary.tambahBaru Tambah
 
 block css
