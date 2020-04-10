@@ -1,15 +1,4 @@
-doctype html
-html
-	head
-		meta(charset='utf-8')
-		meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
-		style
-			:uglify-css:stylus
-				* 
-					word-wrap break-word
-	body 
-		:marked
-			# Hello world
-		script 
-			:uglify-js:babel(presets=['env'])
-				console.log(2 ** 3)
+extends template.pug
+
+block isi
+	.list-group.postingannya

@@ -1,0 +1,20 @@
+//- btoa('kucing')
+doctype html
+html
+	head
+		title Bercerita
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+		link(rel='stylesheet' href='/vendor/bootstrap/css/bootstrap.min.css')
+		style
+			include:uglify-css:stylus template.stylus
+	body 
+		.navbar.navbar-default.navbar-fixed-top
+			.container
+				.navbar-header
+					.navbar-brand Bercerita
+		.container
+			block isi
+		script(src='/vendor/jquery.min.js')
+		script(src='/vendor/bootstrap/js/bootstrap.min.js')
+		script(src='/vendor/olahJson.min.js')
