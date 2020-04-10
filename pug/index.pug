@@ -3,6 +3,22 @@ extends template.pug
 block isi
 	.list-group.postingannya
 
+	.modal.modalLogin(data-backdrop='static')
+		.modal-dialog
+			.modal-content
+				.modal-header
+					h4.modal-title Login dulu
+				.modal-body
+					form.formLogin
+						.form-group
+							label Username
+							input.form-control.loginUsername
+						.form-group
+							label Password
+							input.form-control.loginPassword
+						.form-group
+							input.btn.btn-success.loginSubmit(value='Login' type='submit')
+
 block diLuarContainer
 	.navbar.navbar-default.navbar-fixed-bottom
 		.container
@@ -13,3 +29,6 @@ block diLuarContainer
 
 block css
 	include:uglify-css:stylus index.stylus
+
+block js
+	include:uglify-js:babel(presets=['env']) index.js
