@@ -22,6 +22,37 @@ block isi
 						.form-group
 							input.btn.btn-success.loginSubmit(value='Login' type='submit')
 
+	.modal.modalTambah
+		.modal-dialog
+			.modal-content
+				.modal-header
+					.close(data-dismiss='modal') &times;
+					h4.modal-title Tulisan baru
+				.modal-body
+					form.formTambah
+						.form-group
+							label Judul
+							input.form-control.tambahJudul
+						.form-group
+							label Isi
+							textarea.form-control.tambahIsi(rows=10)
+						.form-group
+							input.btn.btn-success(type='submit' value='Posting')
+
+	.modal.modalTampil
+		.modal-dialog
+			.modal-content
+				.modal-header
+					.close(data-dismiss='modal') &times;
+					h4.modal-title.tampilJudul
+				.modal-body.tampilIsi
+				.modal-footer
+					span.tampilTanggal.pull-left
+					span.pull-right
+						.btn.btn-default.tampilEdit Edit
+						| &nbsp;
+						.btn.btn-danger.tampilEdit Hapus
+
 block diLuarContainer
 	.navbar.navbar-default.navbar-fixed-bottom
 		.container

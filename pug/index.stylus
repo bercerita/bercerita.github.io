@@ -10,3 +10,9 @@ body
 		tr
 		td 
 			border none !important
+			
+.isiPostingan
+	cursor pointer
+	
+.tampilIsi
+	white-space pre-wrap
