@@ -2,3 +2,14 @@ extends template.pug
 
 block isi
 	.list-group.postingannya
+
+block diLuarContainer
+	.navbar.navbar-default.navbar-fixed-bottom
+		.container
+			table.table.table-bordered
+				tbody 
+					tr 
+						td: .btn.btn-primary.tambahBaru Tambah
+
+block css
+	include:uglify-css:stylus index.stylus

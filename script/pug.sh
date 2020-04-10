@@ -1,2 +1,2 @@
 cd pug
-pug . -w -o ../html
+pug . -w -o ..
