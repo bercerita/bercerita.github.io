@@ -89,3 +89,8 @@ $(document).on('click', '.isiPostingan', function(){
 	$('.tampilTanggal').text($(this).find('.tanggalnya').text())
 	$('.modalTampil').modal()
 })
+
+$('.logout').click(() => {
+	localStorage.removeItem('id')
+	$('.modalLogin').modal()
+})
