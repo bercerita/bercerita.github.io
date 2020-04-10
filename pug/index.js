@@ -83,7 +83,10 @@ $('.formTambah').on('submit', x => {
 })
 
 $(document).on('click', '.isiPostingan', function(){
-	localStorage.setItem('idPostingan', $(this).data('idPostingan'))
+	localStorage.setItem('idPostingan', $(this).attr('data-idPostingan'))
+	localStorage.setItem('judulPostingan', $(this).find('.judulnya').text())
+	localStorage.setItem('isiPostingan', $(this).find('.isinya').text())
+	localStorage.setItem('tanggalPostingan', $(this).find('.tanggalnya').text())
 	$('.tampilJudul').text($(this).find('.judulnya').text())
 	$('.tampilIsi').text($(this).find('.isinya').text())
 	$('.tampilTanggal').text($(this).find('.tanggalnya').text())
@@ -93,4 +96,33 @@ $(document).on('click', '.isiPostingan', function(){
 $('.logout').click(() => {
 	localStorage.removeItem('id')
 	$('.modalLogin').modal()
+})
+
+$('.tampilHapus').click(() => {
+	var tanya = confirm('Hapus kah?')
+	if (tanya){
+		loadingStart()
+		$.get(database, data => {
+			loadingDone()
+			var datanya = new OlahJson(data)
+			var ambil = datanya.query(`postingan/${localStorage.idPostingan}`).delete().get()
+			loadingStart()
+			$.ajax({
+				url: database,
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				type: 'put',
+				data: JSON.stringify(ambil),
+				success: () => {
+					loadingDone()
+					olahData()
+				}
+			})
+		})
+	}
+})
+
+$('.tampilEdit').click(() => {
+	$('.modal').modal(hide)
 })

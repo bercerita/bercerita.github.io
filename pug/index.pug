@@ -1,4 +1,4 @@
-extends template.pug
+extends template.pug 
 
 block isi
 	.alert.alert-info
@@ -52,7 +52,15 @@ block isi
 					span.pull-right
 						.btn.btn-default.tampilEdit Edit
 						| &nbsp;
-						.btn.btn-danger.tampilEdit Hapus
+						.btn.btn-danger.tampilHapus Hapus
+
+	.modal.modalEdit
+		.modal-dialog
+			.modal-content
+				.modal-header
+					.close(data-dismiss='modal') &times;
+					h4.modal-title Edit tulisan
+				.modal-body
 
 block diLuarContainer
 	.navbar.navbar-default.navbar-fixed-bottom
