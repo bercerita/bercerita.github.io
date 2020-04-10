@@ -16,3 +16,6 @@ body
 	
 .tampilIsi
 	white-space pre-wrap
+	
+.tampilTanggal
+	padding-left 0
