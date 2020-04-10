@@ -1,5 +1,5 @@
 var olahData = () => {
-
+	$('.usernamenya').text(localStorage.username)
 }
 
 if (!localStorage.id){
