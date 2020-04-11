@@ -24,9 +24,10 @@ var olahData = () => {
 		for (var x of ambilReverse){
 			isiIsian += `
 				<div class='list-group-item isiPostingan' data-idPostingan='${x.id}'>
-					<span class='badge tanggalnya'>${x.tanggal}</div>
+					<span class='pull-right tanggalnya'>${x.tanggal}</div>
 					<span class='judulnya'>${x.judul}</span>
 					<span class='isinya sembunyi'>${x.isi}</span>
+					<span class='clearfix'></span>
 				</div>
 			`
 		}
