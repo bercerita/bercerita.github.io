@@ -24,9 +24,9 @@ var olahData = () => {
 		for (var x of ambilReverse){
 			isiIsian += `
 				<div class='list-group-item isiPostingan' data-idPostingan='${x.id}'>
+					<span class='pull-right tanggalnya'>${x.tanggal}</div>
 					<span class='judulnya'>${x.judul}</span>
 					<span class='isinya sembunyi'>${x.isi}</span>
-					<span class='pull-right tanggalnya'>${x.tanggal}</div>
 				</div>
 			`
 		}
@@ -60,6 +60,14 @@ $('.formLogin').on('submit', x => {
 
 $('.tambahBaru').click(() => $('.modalTambah').modal())
 
+$('.inputanTambah').on('keyup', () => {
+	localStorage.setItem('cacheJudul', $('.tambahJudul').val())
+	localStorage.setItem('cacheIsi', $('.tambahIsi').val())
+})
+
+$('.tambahJudul').val(localStorage.cacheJudul)
+$('.tambahIsi').val(localStorage.cacheIsi)
+
 $('.formTambah').on('submit', x => {
 	x.preventDefault()
 	loadingStart()
@@ -82,6 +90,8 @@ $('.formTambah').on('submit', x => {
 			data: JSON.stringify(ambil),
 			success: () => {
 				loadingDone()
+				localStorage.removeItem('cacheJudul')
+				localStorage.removeItem('cacheIsi')
 				olahData()
 			}
 		})
