@@ -1,2 +1,3 @@
 - [Beranda](/)
+- [Cara menggunakan Github](/kode/github)
 - [Semuanya jadi i](/kode/i)
