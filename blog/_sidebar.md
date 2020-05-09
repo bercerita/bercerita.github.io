@@ -1,2 +1,3 @@
 - [Beranda](/)
+- [Betapa pentingnya menabung](/blog/menabung)
 - [Terkadang ingin menghindar](/blog/menghindar)
