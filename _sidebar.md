@@ -1,2 +1,1 @@
-- [Blog](/blog/)
 - [Kumpulan kode](/kode/)

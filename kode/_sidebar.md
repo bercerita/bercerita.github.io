@@ -1,1 +1,2 @@
+- [Beranda](/)
 - [Semuanya jadi i](/kode/i)
