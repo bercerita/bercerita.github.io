@@ -1,0 +1,1 @@
+- [Tentang menikmati hidup](/blog/menikmati-hidup)
