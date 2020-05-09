@@ -1,0 +1,2 @@
+- [Beranda](/)
+- [Terkadang ingin menghindar](/blog/menghindar)
