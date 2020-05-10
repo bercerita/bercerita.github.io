@@ -1,4 +1,4 @@
 - [Beranda](/)
-- [Menulis itu cocok banget dengan kultur kepribadian Indonesia](/blog/menulis)
 - [Betapa pentingnya menabung](/blog/menabung)
+- [Menulis itu cocok banget dengan kultur kepribadian Indonesia](/blog/menulis)
 - [Terkadang ingin menghindar](/blog/menghindar)

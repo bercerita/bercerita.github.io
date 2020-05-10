@@ -1,7 +1,5 @@
 # Terkadang ingin menghindar
 
-_Sabtu, 9 Mei 2020_
-
 Di balik penatnya rutinitas, terkadang kita ingin menyendiri dan menghindar dari rutinitas yang seakan nggak ada habisnya.
 
 Chat WA yang tiada henti, chat Telegram, notifikasi Facebook, notifikasi Instagram, dan berbagai notifikasi lainnya yang seakan-akan menahan aliran udara yang beredar di udara. Kita seakan dikungkung dalam suatu ruangan yang kita nggak bisa bergerak bebas.
