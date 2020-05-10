@@ -1,4 +1,3 @@
-- [Beranda](/)
 - [Cara menggunakan Github](/kode/github)
 - [Install Composer di Termux](/kode/composer)
 - [Semuanya jadi i](/kode/i)
