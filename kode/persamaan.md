@@ -2,7 +2,7 @@
 
 Soal:
 
-2x + 2y + 2z = 2
+2x + y + 2z = 2
 
 Kode:
 
