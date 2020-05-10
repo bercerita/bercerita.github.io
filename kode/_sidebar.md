@@ -1,4 +1,5 @@
 - [Cara menggunakan Github](/kode/github)
 - [Install Composer di Termux](/kode/composer)
+- [Menyelesaikan persamaan matematika](/kode/persamaan)
 - [Menyelipkan kata "gan" di setiap kata](/kode/gan)
 - [Semuanya jadi i](/kode/i)
