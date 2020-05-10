@@ -1,3 +1,3 @@
 # Kumpulan kode
 
-Berikut ini adalah berbagai kumpulan kode yang mungkin bisa berguna.
+Halaman ini berisi dengan berbagai kumpulan kode yang mungkin bisa berguna.

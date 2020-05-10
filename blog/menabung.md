@@ -1,1 +1,3 @@
 # Betapa pentingnya menabung
+
+Aku punya pengalaman yang mungkin kalian juga mengalaminya. Yaitu, kalau aku naro uang di dalam dompet, pasti habis, entah berapapun duit yang ada di dalam dompet itu. Mau seribu, atau 300.000, kalau di dalam dompet, pasti habis. Soalnya kan, apa yang kita inginkan sesuai dengan apa yang ada di dompet kita. Kalau di dompet kita cuma ada 5.000, apa yang ada di dalam pikiran kita mungkin hanya es tong-tong.
