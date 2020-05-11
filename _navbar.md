@@ -1,2 +1,2 @@
-- [Download Coffee Run](https://s.id/coffeerun30)
 - [Email](mailto:muhzaini30@gmail.com)
+- [Join Discord](https://discord.gg/jXyresx)
