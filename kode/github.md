@@ -6,6 +6,8 @@ Berikut ini adalah beberapa hal tentang git di Github:
 
 ## Buat akun Github dulu
 
+Untuk membuat akun Github, kamu cukup menggunakan alamat emailmu aja. Jadi, kamu buka aja <https://github.com> lalu klik `register` kemudian buat akunnya.
+
 ## Install Git 
 
 Di Termux:
@@ -28,6 +30,8 @@ git config --global user.email emailmu@gmail.com
 ```
 
 ## Membuat repositori
+
+Untuk membuat repositori, klik aja `new` `repository`.
 
 ## Clone repositori
 
