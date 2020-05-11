@@ -1,4 +1,5 @@
 - [Cara menggunakan Github](/kode/github)
+- [Cara tepat menginstall paket Linux yang berbentuk file](/kode/install)
 - [Install Composer di Termux](/kode/composer)
 - [Menyelesaikan persamaan matematika](/kode/persamaan)
 - [Menyelipkan kata "gan" di setiap kata](/kode/gan)
